@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias & Eventos</title>
+
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="Css/encabezado.css">
+    <link rel="stylesheet" href="Css/carrusel.css">
+    <link rel="stylesheet" href="Css/contenido.css">
+    <link rel="stylesheet" href="Css/piePagina.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="Css/contenido2.css">
+    <link rel="stylesheet" href="Css/musica.css">
+
+    <link rel="icon" type="image/x-icon" href="Images/Favico/Logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://kit.fontawesome.com/cdb62e902e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="Images/Encabezado/LogoPrincipal.png" alt="" id="logo"></a>
+        </div>
+
+        <div class="encabezado">
+
+            <div id="interior">
+                <div id="busqueda">
+                    <input type="text" placeholder="Buscar" size="60" style="height: 35px;" id="buscar">
+                </div>
+
+                <div id="iconoBuscar">
+                    <div class="centrar" style="height: 40%;">
+                        <img src="Images/Encabezado/magnifying-glass-solid.png" alt="" width="24px;">
+                    </div>
+                </div>
+
+                <nav id="menu1">
+                    <div class="centrar">
+                        <button class="botonLogin">Contáctanos</button>
+                    </div>
+                    <div class="centrar" >
+
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="botonLogin">Login</button>
+
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="Images/Encabezado/login.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Usuario</b></label>
+                                    <input type="text" placeholder="Introduce tu usuario" name="uname" required>
+
+                                    <label for="psw"><b>Contraseña</b></label>
+                                    <input type="password" placeholder="Introduce tu contraseña" name="psw" required>
+                                        
+                                    <button type="submit" class="login">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                                    <span class="psw"><a href="#">Olvidé mi contraseña</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="centrar">
+                        <button class="botonLogin">Register</button>
+                    </div>
+                </nav> 
+            </div>
+
+            <hr>
+
+            <div class="navegacion">
+                <nav class="centrar">
+                    <button class="principal">PREMIUM</button>
+                    <button class="principal">AYUDA</button>
+                    <button class="principal"><a href="Servicio.html" class="links">SERVICIO AL CLIENTE</a></button>
+                    <button class="principal">DESCARGAR</button>
+                </nav>
+                <div class="iconosSuperior">
+                    <div class="centrar">
+                        <a href="https://www.facebook.com/SpotifyMX" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0050db;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4488fd;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://mx.linkedin.com/company/spotify" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0253de;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://www.youtube.com/@Spotify" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #f21818;"></i></a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+
+        <div class="menu">
+            <nav class="menuc">
+                <button class="boton">Productos</button>
+                <button class="boton">Cloud</button>
+                <button class="boton">Servicios</button>
+                <button class="boton">Socios</button>
+                <button class="boton">Clientes</button>
+                <button class="boton">¿Por qué Spotify?</button>
+                <button class="botonN">
+                    <a href="News.html" class="links">Noticias & Eventos</a>
+                    <div class="dropdown-content">
+                        <a href="#Mix">Spotify Mixes</a>
+                        <a href="#Artistas">Artistas del momento</a>
+                        <a href="#Equal">Spotify Equal</a>
+                    </div>
+                </button>
+                <button class="boton">¿Cómo comprar?</button>
+            </nav>  
+        </div>
+
+        <article id="Mix">
+
+            <div class="encabezadoMix">
+                <table class="primerTabla">
+                    <tr>
+                        <th>
+                            <h1 class="animate__animated animate__fadeInDown" id="news">Spotify Mixes:</h1>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="news">La clave para crear nuevas experiencias musicales</h2>
+                        </td>
+                    </tr>
+                </table>
+                <img src="Images/Noticias&Eventos/mixes.png" alt="Imagen no encontrada" id="mixes">
+            </div>
+
+            <div>
+                <p class="news">
+                    Sumérgete en los Spotify Mixes o “Mezclas de Spotify", las playlist personalizadas para cada persona que se actualizan constantemente con la música favorita de cada usuario. Estas nuevas playlist están inspiradas en Daily Mix, la familia de listas de reproducción más popular entre los usuarios que ofrece canciones basadas en los gustos de cada cliente por tipo de música que escucha. La diferencia entre las Daily Mix y Spotify Mixes es que las segundas están construidas con base en mezclas de artistas, géneros y décadas. Los Spotify Mixes no pretenden sustituir a los Daily Mix que se actualizan todos los días con base en tus reproducciones ¡puedes disfrutar de ambos!
+                </p>
+            </div>
+
+            <div class="contenidoMix">
+                <div class="tablaPilar">
+                    <table class="pilares">
+                        <caption>Los tres pilares de Spotify Mixes</caption>
+                        <tr>
+                            <td class="pilares">Son playlist basadas en tus hábitos de escucha con los artistas, géneros y décadas que más reproduces. Sin embargo, han sido pulidas para que no sólo escuches a tus artistas favoritos, sino tus canciones preferidas de esos artistas.</td>
+                            <td><img src="Images/Noticias&Eventos/mix1.jpeg" alt="Imagen no encontrada" class="borroso"></td>
+                        </tr>
+                        <tr>
+                            <td class="pilares">Cada playlist se complementa con canciones que podrán gustarte, por lo que encontrarás una mezcla de pistas que repites constantemente junto con una dosis de nueva música enfocada totalmente a tu gusto.</td>
+                            <td><img src="Images/Noticias&Eventos/mix2.jpeg" alt="Imagen no encontrada" class="borroso"></td>
+                        </tr>
+                        <tr>
+                            <td class="pilares">Todas las playlist se actualizan con frecuencia e irán cambiando con base en tu gusto musical.</td>
+                            <td><img src="Images/Noticias&Eventos/mix3.jpeg" alt="Imagen no encontrada" class="borroso"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="scroll">
+                    <div class="quote" id="sticky">
+                        <p id="p1">
+                            “Las nuevas Spotify Mixes representan la próxima generación de ofertas enfocadas y personalizadas  en Spotify. Cada día hay 500 millones de sucesos en Spotify, ya sean búsquedas, escuchas, «me gusta» o un sin número de otras acciones, lo que nos permite mejorar nuestro sistema de aprendizaje automático. Esto a su vez nos da la capacidad de impulsar el descubrimiento musical de una manera que nunca antes se había visto.”
+                        </p>
+                        <p id="p2">
+                            - Gustav Söderström, director de I+D de Spotify.
+                        </p>
+                    </div>
+                    <div class="imagenes">
+                        <img src="Images/Noticias&Eventos/Banner.png" alt="" width="100%" id="scroll">
+                    </div> 
+                </div>
+                
+
+            </div>
+
+        </article>
+
+        <article id="Artistas">
+
+            <div class="encabezadoArt">
+                <h1 id="h1Art">Artistas del momento</h1>
+                <h2 id="h2Art">Los artistas que sí o sí has escuchado</h2>
+            </div>
+            
+            <div class="imgsArt">
+                <img src="Images/Noticias&Eventos/art1.jpg" alt="Imagen no encontrada" class="zoom">
+                <img src="Images/Noticias&Eventos/art2.jpg" alt="Imagen no encontrada" class="zoom">
+                <img src="Images/Noticias&Eventos/art3.jpeg" alt="Imagen no encontrada" class="zoom">
+                <img src="Images/Noticias&Eventos/art4.jpg" alt="Imagen no encontrada" class="zoom">
+                <img src="Images/Noticias&Eventos/art5.jpg" alt="Imagen no encontrada" class="zoom">
+                <img src="Images/Noticias&Eventos/art6.jpg" alt="Imagen no encontrada" class="zoom">
+            </div>
+
+            <div class="contenidoArt">
+                <p class="news">
+                    En la actualidad, la industria musical se encuentra en un estado de efervescencia creativa, y no es de extrañar que los oyentes estén sintonizando sus melodías favoritas en cantidades récord. Entre los artistas más destacados del momento se encuentran The Weeknd, cuyo inconfundible estilo R&B ha cautivado a más de 100 millones de oyentes en todo el mundo, sumergiéndolos en un viaje emocional a través de sus canciones introspectivas. Taylor Swift, la reina indiscutible de la narración musical, sigue conquistando corazones con más de 85 millones de reproducciones, mientras que Stray Kids, el grupo de K-pop de renombre global, ha logrado más de 50 millones de reproducciones gracias a su energía imparable. Florence + The Machine, con su singular mezcla de indie y rock, mantiene cautivos a más de 60 millones de oyentes, mientras que Mitski, la sensación indie del momento, ha dejado una impresión imborrable en más de 40 millones de almas con sus letras profundas y emotivas. Estos artistas, cada uno en su propio género, continúan encabezando las listas de reproducción y marcando tendencia en la escena musical actual.
+                </p>
+                <p class="news">
+                    The Weeknd ha mantenido a sus oyentes totalmente inmersos en su último álbum "After Hours", con éxitos como "Blinding Lights" y "Save Your Tears", que han sido reproducidos más de 20 millones de veces cada uno. Taylor Swift, siempre sorprendente, ha lanzado su aclamado álbum "folklore", con temas como "Cardigan" y "Exile" que acumulan más de 15 millones de reproducciones cada uno, conquistando la atención global. Stray Kids, con su energía inquebrantable, ha sacudido las listas de reproducción con su sencillo "God's Menu", que ha sido reproducido más de 10 millones de veces, mientras que Florence + The Machine ha dejado una huella imborrable con su poderosa canción "Shake It Out", que ha superado los 5 millones de streams. Por último, Mitski ha tocado los corazones de millones de oyentes con su emotiva "Your Best American Girl", que acumula más de 8 millones de reproducciones. En un momento en el que la música se convierte en el refugio y la inspiración de muchos, estos artistas continúan definiendo el paisaje musical con su talento único, ofreciendo a los oyentes un escape emocional a través de sus canciones, y asegurando su lugar como los más escuchados del momento.
+                </p>
+            </div>
+
+            <div class="statisticsArt">
+                <div class="videos">
+                    <table id="links">
+                        <tr><th>¡Dos de tus artistas favoritos se encuentran de gira!</th></tr>
+                        <tr>
+                            <td class="videos">
+                                <iframe width="718" height="400" src="https://www.youtube.com/embed/KudedLV0tP0" title="TAYLOR SWIFT | THE ERAS TOUR Concert Film Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="videos">
+                                <iframe width="671" height="400" src="https://www.youtube.com/embed/QxASgd5wM2c" title="The Weeknd - After Hours Til Dawn Tour 2023 (4K Trailer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="premios">
+                    <table id="premiosTable">
+                        <tr>
+                            <th colspan="2" id="titulo">SUS PREMIOS Y CANCIONES MÁS ESCUCHADAS:</th>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" class="fondo">The Weeknd</th>
+                            <td>
+                                <ul>
+                                    <li>Premio Diamante de la Música por su álbum "After Hours"</li>
+                                    <li>Mejor Artista Masculino del Año en los Premios Globales de la Música</li>
+                                    <li>Canción del Año por "Blinding Lights" en los Premios de la Industria Musical</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>"Blinding Lights," "Save Your Tears," "Starboy," "Can't Feel My Face," "In The Night."</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" class="fondo">Taylor Swift</th>
+                            <td>
+                                <ul>
+                                    <li>Icono de la Generación en los Premios de la Música Pop</li>
+                                    <li>Álbum del Año por "folklore" en los Premios de la Crítica Musical</li>
+                                    <li>Mejor Video Musical por "Cardigan" en los Premios de la Creatividad Visual</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>"Love Story," "Shake It Off," "Blank Space," "Bad Blood," "You Belong with Me."</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" class="fondo">Stray Kids</th>
+                            <td>
+                                <ul>
+                                    <li>Grupo Revelación Internacional del Año en los Premios del K-Pop</li>
+                                    <li>Mejor Actuación en Vivo por su gira "District 9" en los Premios de Entretenimiento en Vivo</li>
+                                    <li>Artista Global del Año en los Premios de la Música Asiática</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> "God's Menu," "Back Door," "MIROH," "Double Knot," "District 9."</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" class="fondo">Florence + The Machine</th>
+                            <td>
+                                <ul>
+                                    <li>Premio al Impacto en la Cultura Musical por su álbum "High as Hope"</li>
+                                    <li>Mejor Actuación en Festival por su actuación en Glastonbury</li>
+                                    <li>Premio de Honor por Contribución a la Música en los Premios de la Industria Musical Británica</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>"Shake It Out," "Dog Days Are Over," "Ship to Wreck," "What Kind of Man," "Hunger."</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" class="fondo">Khalid</th>
+                            <td>
+                                <ul>
+                                    <li>Mejor Artista de R&B Contemporáneo en los Premios de la Música Urbana</li>
+                                    <li>Canción del Año por "Your Best American Girl" en los Premios de la Crítica Musical</li>
+                                    <li>Mejor Intérprete Femenina en los Premios de la Música Indie</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>"Location," "Young Dumb & Broke," "Talk," "Better," "Love Lies" (con Normani).</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" class="fondo">Mitski</th>
+                            <td>
+                                <ul>
+                                    <li>Artista Indie del Año en los Premios de la Música Alternativa</li>
+                                    <li>Álbum del Año por "Free Spirit" en los Premios de la Crítica Musical</li>
+                                    <li>Mejor Colaboración por "Love Lies" junto a Normani en los Premios de la Música Pop</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> "Your Best American Girl," "Nobody," "Geyser," "Be the Cowboy," "First Love / Late Spring."</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+        </article>
+
+        <div id="Equal">
+            <div class="encabezadoEqual">
+                <h1 id="h1Eq">Spotify Equal</h1>
+                <h2 id="h2Eq">En apoyo a la visibilización de la mujer en la industria musical</h2>
+            </div>
+            <div class="headEqual">
+                <img src="Images/Noticias&Eventos/equal4.jpeg" alt="Imagen no encontrada" id="e4">
+                <img src="Images/Noticias&Eventos/equal2.png" alt="Imagen no encontrada" id="e2">
+                <img src="Images/Noticias&Eventos/equal3.jpg" alt="Imagen no encontrada" id="e3">
+                <img src="Images/Noticias&Eventos/equal1.jpg_large" alt="Imagen no encontrada" id="e1">
+            </div>
+            <div class="contenidoEqual">
+                <p class="news">
+                    Porque las mujeres son camaleónicas y multifacéticas, Spotify ha preparado una playlist para cada mood, destacando a aquellas mujeres que se están convirtiendo en un parteaguas en cada uno de sus géneros. Rock, Mujeres del Indie, Femcees, Hechas en México, Badass, Doorknockers, Mujeres Bravías, Himnos de sororidad. La lista sigue y sigue, pero la intención de esta plataforma es la misma: que lleves a tus oídos la lírica de más mujeres, que va más allá de oírlas, si no de verdad escucharlas. Todo comienza aquí: 
+                    <a href="https://open.spotify.com/genre/equal-page" id="a">https://open.spotify.com/genre/equal-page</a> 
+                </p>
+                <p class="news">
+                    Abramos los oídos y la mente, mostrando lo orgullosas que estamos de nosotras y la forma en la que usamos el foro que nos brinda la música para expresarnos y definirnos. La música de grandes artistas femeninas está ahí: lo único que tienes que hacer es darles Play.
+                    #DalesPlayDalesPower
+                </p>
+                <p class="news">
+                    Pero sabemos que una playlist no es suficiente, ya que más que visibilización, es necesario crear espacios para estas artistas, por lo tanto, la segunda edición del Spotify Equal Fest llega a España este año. El evento, que busca visibilizar y realzar la música de diferentes artistas femeninas, tendrá lugar el próximo 22 de septiembre en el WiZink Center, donde artistas como Nathy Peluso, Judeline, Natalia Lacunza y Ptazeta interpretarán sus mayores éxitos. Te invitamos a ser participe de este gran evento.
+                </p>
+            </div>
+            <div class="footEqual">
+                <table class="footEqual">
+                    <tr>
+                        <td style="text-align: center;">
+                            <video src="Media/Ellas son la música que mueve al mundo.mp4" width="525" height="295" controls></video>
+                        </td>
+                        <td>
+                            <div class="player">
+                                <div class="player__controls">
+                                    <h5 class="player__title">Reproduciendo ahora</h5>
+                                </div>
+                                <div class="player__album">
+                                    <img src="Images/Noticias&Eventos/portada.jpg" alt="Album Cover" class="player__img" loading="lazy" />
+                                </div>
+                             
+                                <h2 class="player__artist">Mitski</h2>
+                                <h3 class="player__song" id="song">Brand New City</h3>
+                             
+                                <input type="range" value="20" min="0" class="player__level" id="range" />
+                                <div class="audio-duration">
+                                    <div class="start">00:01</div>
+                                    <div class="end">02:13</div>
+                                </div>
+                             
+                                <audio class="player__audio" controls id="audio">
+                                    <source src="Media/Mitski - Brand New City (Official Audio) (128 kbps).mp3" type="audio/mpeg" />
+                                </audio>
+                             
+                                <div class="player__controls">
+                                    <div class="player__btn player__btn--medium" id="backward">
+                                        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+                                    </div>
+                             
+                                    <div class="player__btn player__btn--medium blue play" id="play">
+                                      <i class="fas fa-play play-btn"></i>
+                                      <i class="fas fa-pause pause-btn hide"></i>
+                                    </div>
+                             
+                                    <div class="player__btn player__btn--medium" id="forward">
+                                        <i class="fa-solid fa-arrow-right fa-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>          
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <footer class="pie">
+        <div id="contacto">
+            <div class="centrar" style="padding: 30px;">
+                <i class="fa-solid fa-phone fa-2xl"></i>
+            </div>
+            <div class="centrar" style="width: 70%;">
+                <p>Contacto Spotify</p>
+                <p>MX: +55 12345678 <a href="#" style="text-decoration: none;">(Más ciudades >>)</a></p>
+            </div>
+            <div class="iconosInferiores">
+                <div class="centrar">
+                    <a href="https://www.facebook.com/SpotifyMX" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0050db;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4488fd;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://mx.linkedin.com/company/spotify" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0253de;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://www.youtube.com/@Spotify" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #f21818;"></i></a>
+                </div> 
+            </div>
+        </div>
+        <div>
+            <table class="tabla1">
+                <tr>
+                    <td>
+                        <h4>COMPAÑIA</h4>
+                    </td>
+
+                    <td>
+                        <h4>COMUNIDADES</h4>
+                    </td>
+
+                    <td>
+                        <h4>ENLACES ÚTILES</h4>
+                    </td>
+
+                    <td>
+                        <h4>TÉRMINOS Y CONDICIONES</h4>
+                    </td>
+
+                    <td>
+                        <h4>PREGUNTAS FRECUENTES</h4>
+                    </td>
+
+                <tr>
+                    <td>
+                       Acerca de 
+                    </td>
+                    <td>
+                        Para artistas
+                     </td>
+                    <td>
+                        Ayuda
+                    </td>
+                    <td>
+                        Reglamento
+                    </td>
+                    <td>
+                        Hay un error en mi cuenta
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                       Empleo
+                    </td>
+                    <td>
+                        Desarrolladores
+                     </td>
+                    <td>
+                        Reproductor web
+                    </td>
+                    <td>
+                        Premium
+                    </td>
+                    <td>
+                        Cambiar cuenta
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       For the record 
+                    </td>
+                    <td>
+                        Publicidad
+                     </td>
+                    <td>
+                        App movil gratis
+                    </td>
+                    <td>
+                        Métodos de pago
+                    </td>
+                    <td>
+                        ¿Cómo cierro sesión?
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                      
+                    </td>
+                    <td>
+                        Inversionistas
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        Proveedores
+                     </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script src="JS/audio.js"></script>
+</body>
+</html>
