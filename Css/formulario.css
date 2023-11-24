@@ -1,0 +1,35 @@
+table.tablaForm td{
+    text-align: center;
+}
+
+table.tablaForm{
+    background-color: rgba(195, 211, 191, 0.767);
+}
+
+legend{
+    font-style: italic;
+    font-size: 25px;
+    color: green;
+}
+
+/* PSEUDO ELEMENTOS SELECTORES */
+legend#info::after{
+    content: url(../Images/Servicio/Info.png);
+}
+
+/* PSEUDO ELEMENTOS SELECTORES */
+legend#equipo::before{
+    content: url(../Images/Servicio/Equipo.png);
+}
+
+/* SELECTORES HIJOS COMBINATOR*/
+div.form1 > form.form, div.form2 > form.form{
+    border-style: outset;
+    padding: 10px;
+    /* background-color: #78c08e75; */
+    background-color: rgba(175, 207, 167, 0.411);
+}
+
+fieldset{
+    border-style: groove;
+}

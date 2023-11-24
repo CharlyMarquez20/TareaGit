@@ -1,0 +1,50 @@
+table{
+    box-shadow: 0 5px 10px gray;
+    width: 70%;
+    margin: 0 auto;
+}
+
+table td{
+    padding: 20px;
+}
+
+h6.sinEspacio, p.sinEspacio{
+    padding: 0;
+    margin: 0;
+}
+
+h6{
+    color: green;
+}
+
+a.sinEspacio{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* SELECTOR DESCENDIENTE COMBINATOR*/
+td.imagen img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+div.requerimientos{
+    display: flex;
+    padding: 20px;
+}
+
+h3{
+    font-size: 23px;
+    color: green;
+    text-align: center;
+}
+
+div.centro{
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,32 @@
+/* SELECTOR DE CLASE SIMPLE*/
+table.tabla1{
+    width: 100%;
+    text-align: center;
+}
+
+h4{
+    font-size: 16px;
+    color: green;
+    text-align: center;
+}
+
+footer.pie{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px gray;
+    background-color: rgba(128, 128, 128, 0.253);
+    margin-bottom: 60px;
+}
+
+/* SELECTOR DE ID SIMPLE*/
+div#contacto{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+div.iconosInferiores{
+    display: flex;
+    width: 30%;
+    justify-content: end;
+    padding: 20px;
+}

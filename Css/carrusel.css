@@ -1,0 +1,74 @@
+nav.menuc{
+    display: flex;
+    justify-content: left;
+    background-color: #1ed75fe7;
+}
+
+button.boton, button.botonN{
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+nav.menuc a{
+    color: black;
+    padding: 15px;
+}
+
+/* PSEUDO CLASS SELECTOR */
+button.boton:hover, button.botonN:hover{
+    background: #169f46b0;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+.mySlides{
+    display: none;
+}
+
+img.carrusel {
+    vertical-align: middle;
+    height: 700px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    font-family: Verdana, sans-serif;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 5px 10px gray;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb00;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* .active {
+    background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
