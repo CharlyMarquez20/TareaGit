@@ -1,0 +1,100 @@
+div.encabezado{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+div#interior{
+    display: flex;
+    height: 43px;
+}
+
+header{
+    display: flex;
+}
+
+hr{
+    border: 1px solid gray;
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+}
+
+hr.encabezado{
+    border-right: 1px solid gray;
+}
+
+div#logo{
+    width: 250px;
+    padding: 20px;
+}
+
+img#logo{
+    width: 100%;
+}
+
+div#iconoBuscar{
+    height: 75%;
+    position: relative;
+    top: 3px;
+}
+
+nav#menu1{
+    display: flex;
+    justify-content: end;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: 4px;
+    /* border: 1px solid green; */
+}
+
+.centrar{
+    align-self: center;
+    padding: 10px;
+}
+
+div#busqueda{
+    height: 40px;
+}
+
+div.navegacion{
+    display: flex;
+    /* border: 1px solid blue; */
+    height: 60%;
+}
+
+nav.centrar{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid palevioletred; */
+}
+
+div.iconosSuperior{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+button.principal{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+button.principal:hover{
+    border-bottom: 3px solid green;
+}
+
+a.links{
+    text-decoration: none;
+}
+
+/* PSEUDO CLASS SELECTOR */
+a.links:visited, a.links:link{
+    color: black;
+}
