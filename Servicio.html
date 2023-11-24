@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio al cliente</title>
+
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="Css/encabezado.css">
+    <link rel="stylesheet" href="Css/carrusel.css">
+    <link rel="stylesheet" href="Css/contenido.css">
+    <link rel="stylesheet" href="Css/piePagina.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="Css/formulario.css">
+
+    <link rel="icon" type="image/x-icon" href="Images/Favico/Logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cdb62e902e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="Images/Encabezado/LogoPrincipal.png" alt="" id="logo"></a>
+        </div>
+
+        <div class="encabezado">
+
+            <div id="interior">
+                <div id="busqueda">
+                    <input type="text" placeholder="Buscar" size="60" style="height: 35px;" id="buscar">
+                </div>
+
+                <div id="iconoBuscar">
+                    <div class="centrar" style="height: 40%;">
+                        <img src="Images/Encabezado/magnifying-glass-solid.png" alt="" width="24px;">
+                    </div>
+                </div>
+
+                <nav id="menu1">
+                    <div class="centrar">
+                        <button class="botonLogin">Contáctanos</button>
+                    </div>
+                    <div class="centrar" >
+
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="botonLogin">Login</button>
+
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="Images/Encabezado/login.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Usuario</b></label>
+                                    <input type="text" placeholder="Introduce tu usuario" name="uname" required>
+
+                                    <label for="psw"><b>Contraseña</b></label>
+                                    <input type="password" placeholder="Introduce tu contraseña" name="psw" required>
+                                        
+                                    <button type="submit" class="login">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                                    <span class="psw"><a href="#">Olvidé mi contraseña</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="centrar">
+                        <button class="botonLogin">Register</button>
+                    </div>
+                </nav> 
+            </div>
+
+            <hr>
+
+            <div class="navegacion">
+                <nav class="centrar">
+                    <button class="principal">PREMIUM</button>
+                    <button class="principal">AYUDA</button>
+                    <button class="principal"><a href="Servicio.html" class="links">SERVICIO AL CLIENTE</a></button>
+                    <button class="principal">DESCARGAR</button>
+                </nav>
+                <div class="iconosSuperior">
+                    <div class="centrar">
+                        <a href="https://www.facebook.com/SpotifyMX" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0050db;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4488fd;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://mx.linkedin.com/company/spotify" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0253de;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://www.youtube.com/@Spotify" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #f21818;"></i></a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="menu">
+            <nav class="menuc">
+                <button class="boton">Productos</button>
+                <button class="boton">Cloud</button>
+                <button class="boton">Servicios</button>
+                <button class="boton">Socios</button>
+                <button class="boton">Clientes</button>
+                <button class="boton">¿Por qué Spotify?</button>
+                <button class="boton"><a href="News.html" class="links">Noticias & Eventos</a></button>
+                <button class="boton">¿Cómo comprar?</button>
+            </nav>  
+        </div>
+
+        <br>
+
+        <div class="form1">
+            <form action="" class="form">
+                <fieldset>
+                    <legend style="text-align: left;" id="info">Información personal  </legend>
+                    <table class="tablaForm">
+                        <tr>
+                            <td>
+                                <label for="nombre">Usuario:</label>
+                                <input type="text" placeholder="Escribe tu usuario aquí" size="30">
+                            </td>
+                            <td>
+                                <input type="radio" name="sexo" id="hombre" value="hombre" checked>
+                                <label for="radio">Hombre</label><br>
+                                <input type="radio" name="sexo" id="mujer" value="mujer" checked>
+                                <label for="radio">Mujer</label><br>
+                                <input type="radio" name="sexo" id="no" value="no" checked>
+                                <label for="radio">Prefiero no responer</label><br>
+                            </td>
+                            <td>
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" min="10" max="99">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Selecciona:</h3>
+                                <input type="checkbox" id="duda" name="duda" value="duda">
+                                <label for="duda">Necesito una aclaración</label><br>
+                                <input type="checkbox" id="urgente" name="urgente" value="urgente">
+                                <label for="urgente">Necesito ayuda urgente</label><br>
+                                <input type="checkbox" name="cuenta" id="cuenta" value="cuenta">
+                                <label for="cuenta">Mi cuenta no funciona</label><br>
+                                <input type="checkbox" name="internet" id="internet" value="internet">
+                                <label for="internet">No detecta conexión a internet</label><br>
+                            </td>
+                            <td>
+                                <h3>Describe tu problema</h3>
+                                <textarea name="razon" id="razon" cols="40" rows="10" wrap="soft"></textarea>
+                            </td>
+                            <td>
+                                <h3>¿Cada cuánto tienes problemas con nosotros?</h3>
+                                <input list="list">
+                                <datalist id="list">
+                                    <option value="Todos los días"></option>
+                                    <option value="Cada semana"></option>
+                                    <option value="Cada mes"></option>
+                                    <option value="Cada año"></option>
+                                    <option value="Casi nunca"></option>
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="form2">
+            <form action="" class="form">
+                <fieldset>
+                    <legend style="text-align: left;" id="equipo">  Únete a nuestro equipo</legend>
+                    <table class="tablaForm">
+                        <h3>Nos gustaría que formaras parte de la comunidad para ayudarnos a mejorar</h3>
+                        <h3>¿Quieres ser parte de ella?</h3>
+                        <tr>
+                            <td colspan="2">
+                                <label for="nombre">Nombre completo:</label>
+                                <input type="text" placeholder="Escribe tu nombre aquí" size="50">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>¿Por qué te gustaría formar parte de ella?</p>
+                                <textarea name="formarParte" id="formarParte" cols="40" rows="10" wrap="soft"></textarea>
+                            </td>
+                            <td>
+                                <label for="fecha">¿En qué fecha te gustaría acceder a los cursos?</label><br>
+                                <input type="date" id="fecha">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Datos de contacto</p>
+                                <label for="email">Email: </label>
+                                <input type="email" name="email" id="email"><br><br>
+                                <label for="telefono">Número telefónico:</label>
+                                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                            </td>
+                            <td>
+                                <p>Fotografía de identificación</p>
+                                <input type="file" id="imagen">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+    <br>
+
+    <footer class="pie">
+        <div id="contacto">
+            <div class="centrar" style="padding: 30px;">
+                <i class="fa-solid fa-phone fa-2xl"></i>
+            </div>
+            <div class="centrar" style="width: 70%;">
+                <p>Contacto Spotify</p>
+                <p>MX: +55 12345678 <a href="#" style="text-decoration: none;">(Más ciudades >>)</a></p>
+            </div>
+            <div class="iconosInferiores">
+                <div class="centrar">
+                    <a href="https://www.facebook.com/SpotifyMX" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0050db;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4488fd;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://mx.linkedin.com/company/spotify" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0253de;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://www.youtube.com/@Spotify" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #f21818;"></i></a>
+                </div> 
+            </div>
+        </div>
+        <div>
+            <table class="tabla1">
+                <tr>
+                    <td>
+                        <h4>COMPAÑIA</h4>
+                    </td>
+
+                    <td>
+                        <h4>COMUNIDADES</h4>
+                    </td>
+
+                    <td>
+                        <h4>ENLACES ÚTILES</h4>
+                    </td>
+
+                    <td>
+                        <h4>TÉRMINOS Y CONDICIONES</h4>
+                    </td>
+
+                    <td>
+                        <h4>PREGUNTAS FRECUENTES</h4>
+                    </td>
+
+                <tr>
+                    <td>
+                       Acerca de 
+                    </td>
+                    <td>
+                        Para artistas
+                     </td>
+                    <td>
+                        Ayuda
+                    </td>
+                    <td>
+                        Reglamento
+                    </td>
+                    <td>
+                        Hay un error en mi cuenta
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                       Empleo
+                    </td>
+                    <td>
+                        Desarrolladores
+                     </td>
+                    <td>
+                        Reproductor web
+                    </td>
+                    <td>
+                        Premium
+                    </td>
+                    <td>
+                        Cambiar cuenta
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       For the record 
+                    </td>
+                    <td>
+                        Publicidad
+                     </td>
+                    <td>
+                        App movil gratis
+                    </td>
+                    <td>
+                        Métodos de pago
+                    </td>
+                    <td>
+                        ¿Cómo cierro sesión?
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                      
+                    </td>
+                    <td>
+                        Inversionistas
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        Proveedores
+                     </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>
