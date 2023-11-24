@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="Css/encabezado.css">
+    <link rel="stylesheet" href="Css/carrusel.css">
+    <link rel="stylesheet" href="Css/contenido.css">
+    <link rel="stylesheet" href="Css/piePagina.css">
+    <link rel="stylesheet" href="Css/login.css">
+
+    <link rel="icon" type="image/x-icon" href="Images/Favico/Logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/cdb62e902e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="Images/Encabezado/LogoPrincipal.png" alt="" id="logo"></a>
+        </div>
+
+        <div class="encabezado">
+
+            <div id="interior">
+                <div id="busqueda">
+                    <input type="text" placeholder="Buscar" size="60" style="height: 35px;" id="buscar">
+                </div>
+
+                <div id="iconoBuscar">
+                    <div class="centrar" style="height: 40%;">
+                        <img src="Images/Encabezado/magnifying-glass-solid.png" alt="" width="24px;">
+                    </div>
+                </div>
+
+                <nav id="menu1">
+                    <div class="centrar">
+                        <button class="botonLogin">Contáctanos</button>
+                    </div>
+                    <div class="centrar">
+                        <p>|</p>
+                    </div>
+                    <div class="centrar" >
+
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="botonLogin">Login</button>
+
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="Images/Encabezado/login.png" alt="Avatar" class="avatar">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Usuario</b></label>
+                                    <input type="text" placeholder="Introduce tu usuario" name="uname" required>
+
+                                    <label for="psw"><b>Contraseña</b></label>
+                                    <input type="password" placeholder="Introduce tu contraseña" name="psw" required>
+                                        
+                                    <button type="submit" class="login">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                                    <span class="psw"><a href="#">Olvidé mi contraseña</a></span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="centrar">
+                        <p>|</p>
+                    </div>
+                    <div class="centrar">
+                        <button class="botonLogin">Register</button>
+                    </div>
+                </nav> 
+            </div>
+
+            <hr>
+
+            <div class="navegacion">
+                <nav class="centrar">
+                    <button class="principal">PREMIUM</button>
+                    <button class="principal">AYUDA</button>
+                    <button class="principal"><a href="Servicio.html" class="links">SERVICIO AL CLIENTE</a></button>
+                    <button class="principal">DESCARGAR</button>
+                </nav>
+                <div class="iconosSuperior">
+                    <div class="centrar">
+                        <a href="https://www.facebook.com/SpotifyMX" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0050db;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4488fd;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://mx.linkedin.com/company/spotify" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0253de;"></i></a>
+                    </div>
+                    <div class="centrar">
+                        <a href="https://www.youtube.com/@Spotify" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #f21818;"></i></a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section>
+
+        <div class="menu">
+            <nav class="menuc">
+                <button class="boton">Productos</button>
+                <button class="boton">Cloud</button>
+                <button class="boton">Servicios</button>
+                <button class="boton">Socios</button>
+                <button class="boton">Clientes</button>
+                <button class="boton">¿Por qué Spotify?</button>
+                <button class="boton"><a href="News.html" class="links">Noticias & Eventos</a></button>
+                <button class="boton">¿Cómo comprar?</button>
+            </nav>  
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="text-align: center;">
+                <img src="Images/Carrusel/TheWeeknd.jpg" width="100%" class="carrusel">
+            </div>
+            
+            <div class="mySlides fade" style="text-align: center;">
+                <img src="Images/Carrusel/Taylor.jpg" width="100%" class="carrusel">
+            </div>
+            
+            <div class="mySlides fade" style="text-align: center;">
+                <img src="Images/Carrusel/BadBunny.jpg" width="100%" class="carrusel">
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+                <img src="Images/Carrusel/DuaLipa.jpg" alt="" width="100%" class="carrusel">
+            </div>
+            <div class="mySlides fade" style="text-align: center;">
+                <img src="Images/Carrusel/EdSheeran.jpg" alt="" width="100%" class="carrusel">
+            </div>
+        </div>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+        <br>
+        <br>
+
+        <div class="tablas">
+            <table>
+                <tr>
+                    <td class="imagen">
+                        <img src="Images/Contenido/Premium.png" alt="">
+                    </td>
+                    <td>
+                        <h6>Planes</h6>
+                        <ul>
+                            <li>Individual - $129 pesos (1 cuenta)</li>
+                            <li>Dúo - $169 pesos (2 cuentas)</li>
+                            <li>Familiar - $199 pesos (6 cuentas)</li>
+                            <li>Estudiante - $69 (1 cuenta)</li>
+                        </ul>
+                        <p class="sinEspacio"><a href="#" class="sinEspacio">Leer más >></a></p>
+                    </td>
+                    <td class="imagen">
+                        <img src="Images/Contenido/Playlist.jpg" alt="">
+                    </td>
+                    <td>
+                        <h6>Playlist</h6>
+                        <p>Las playlists en Spotify son una forma popular de organizar y compartir música. 
+                            Puedes crear tus propias playlists con canciones que te gusten y darles un nombre que refleje su contenido. 
+                            También puedes agregar portadas personalizadas para darles un toque visual único. 
+                            Además, Spotify ofrece la opción de seguir las playlists creadas por otros usuarios, lo que te permite descubrir 
+                            nueva música y seguir el gusto musical de personas que compartan intereses similares.
+                        </p>
+                        <p class="sinEspacio"><a href="#" class="sinEspacio">Leer más >></a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="imagen">
+                        <img src="Images/Contenido/Dispositivos.png" alt="">
+                    </td>
+                    <td>
+                        <h6>Dispositivos</h6>
+                        <p>
+                            Existe una amplia variedad de dispositivos en los que puedes utilizar Spotify, puede ser desde un dispositivo móvil como nuestro
+                            teléfono, laptops, tablets, hasta computadoras de escritorio.
+                        </p>
+                        <p class="sinEspacio"><a href="#" class="sinEspacio">Leer más >></a></p>
+                    </td>
+                    <td class="imagen">
+                        <img src="Images/Contenido/Artistas.jpeg" alt="">
+                    </td>
+                    <td>
+                        <h6>Spotify para Artistas</h6>
+                        <p>
+                            Es una plataforma en línea proporcionada por Spotify que está diseñada específicamente para artistas y músicos que tienen música 
+                            en la plataforma de streaming de música Spotify. Esta plataforma ofrece una serie de herramientas y recursos que permiten a los artistas y a sus 
+                            equipos de gestión obtener información y estadísticas sobre el rendimiento de sus canciones en Spotify, interactuar con su audiencia y 
+                            mejorar su presencia en la plataforma.
+                        </p>
+                        <p class="sinEspacio"><a href="#" class="sinEspacio">Leer más >></a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <br><br>
+
+        <h3>Métodos de pago</h3>
+
+        <div class="requerimientos">
+            <div class="centro">
+                <i class="fa-solid fa-money-bill fa-2xl fa-beat" style="color: #1f5129;"></i>
+                <p>Efectivo</p>
+            </div>
+            <div class="centro">
+                <i class="fa-regular fa-credit-card fa-2xl fa-shake"></i>
+                <p>Tarjeta de crédito</p>
+            </div>
+            <div class="centro">
+                <i class="fa-solid fa-credit-card fa-2xl fa-shake"></i>
+                <p>Tarjeta de débito</p>
+            </div>
+            <div class="centro">
+                <i class="fa-solid fa-wallet fa-2xl fa-bounde" style="color: #38230a;"></i>
+                <p>Monedero electrónico</p>
+            </div>
+            <div class="centro">
+                <i class="fa-solid fa-money-check fa-2xl fa-beat" style="color: #6c8042;"></i>
+                <p>Cheques</p>
+            </div>
+            <div class="centro">
+                <i class="fa-brands fa-bitcoin fa-bounce fa-2xl" style="color: #0047c2;"></i>
+                <p>Bitcoin</p>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <footer class="pie">
+        <div id="contacto">
+            <div class="centrar" style="padding: 30px;">
+                <i class="fa-solid fa-phone fa-2xl"></i>
+            </div>
+            <div class="centrar" style="width: 70%;">
+                <p>Contacto Spotify</p>
+                <p>MX: +55 12345678 <a href="#" style="text-decoration: none;">(Más ciudades >>)</a></p>
+            </div>
+            <div class="iconosInferiores">
+                <div class="centrar">
+                    <a href="https://www.facebook.com/SpotifyMX" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #0050db;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter fa-2xl" style="color: #4488fd;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://mx.linkedin.com/company/spotify" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0253de;"></i></a>
+                </div>
+                <div class="centrar">
+                    <a href="https://www.youtube.com/@Spotify" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #f21818;"></i></a>
+                </div> 
+            </div>
+        </div>
+        <div>
+            <table class="tabla1">
+                <tr>
+                    <td>
+                        <h4>COMPAÑIA</h4>
+                    </td>
+
+                    <td>
+                        <h4>COMUNIDADES</h4>
+                    </td>
+
+                    <td>
+                        <h4>ENLACES ÚTILES</h4>
+                    </td>
+
+                    <td>
+                        <h4>TÉRMINOS Y CONDICIONES</h4>
+                    </td>
+
+                    <td>
+                        <h4>PREGUNTAS FRECUENTES</h4>
+                    </td>
+
+                <tr>
+                    <td>
+                       Acerca de 
+                    </td>
+                    <td>
+                        Para artistas
+                     </td>
+                    <td>
+                        Ayuda
+                    </td>
+                    <td>
+                        Reglamento
+                    </td>
+                    <td>
+                        Hay un error en mi cuenta
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                       Empleo
+                    </td>
+                    <td>
+                        Desarrolladores
+                     </td>
+                    <td>
+                        Reproductor web
+                    </td>
+                    <td>
+                        Premium
+                    </td>
+                    <td>
+                        Cambiar cuenta
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                       For the record 
+                    </td>
+                    <td>
+                        Publicidad
+                     </td>
+                    <td>
+                        App movil gratis
+                    </td>
+                    <td>
+                        Métodos de pago
+                    </td>
+                    <td>
+                        ¿Cómo cierro sesión?
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                      
+                    </td>
+                    <td>
+                        Inversionistas
+                     </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        Proveedores
+                     </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <script src="JS/carrusel.js"></script>
+    <script src="JS/login.js"></script>
+</body>
+</html>
